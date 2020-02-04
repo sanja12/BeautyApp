@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>215662808703-ob0ltf6gga9f87hfki1lkmb9td01oe12.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.215662808703-ob0ltf6gga9f87hfki1lkmb9td01oe12</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYOb39FR35zM4sVEIWVYxy30I3L60e89I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>215662808703</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sanja12.BeautyApp</string>
+	<key>PROJECT_ID</key>
+	<string>beautyapp-3ccfe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>beautyapp-3ccfe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:215662808703:ios:52a74b307fb664a59f794a</string>
+	<key>DATABASE_URL</key>
+	<string>https://beautyapp-3ccfe.firebaseio.com</string>
+</dict>
+</plist>
