@@ -17,6 +17,7 @@
 		A245F25323E2D8A50078DE00 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245F25223E2D8A50078DE00 /* SignUpViewController.swift */; };
 		A245F25523E2D8B70078DE00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245F25423E2D8B70078DE00 /* LoginViewController.swift */; };
 		A245F25723E30ED00078DE00 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245F25623E30ED00078DE00 /* ContainerViewController.swift */; };
+		A25DFF0523E9B6CB0040C191 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DFF0423E9B6CB0040C191 /* Protocols.swift */; };
 		A26C86A323E8694100976F06 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C86A223E8694100976F06 /* MenuViewController.swift */; };
 		A26C86A723E86B6100976F06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C86A623E86B6100976F06 /* HomeViewController.swift */; };
 		A2B3879623E4607E00C83D37 /* pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B3879523E4607D00C83D37 /* pink.jpg */; };
@@ -41,6 +42,7 @@
 		A245F25223E2D8A50078DE00 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A245F25423E2D8B70078DE00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A245F25623E30ED00078DE00 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		A25DFF0423E9B6CB0040C191 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A26C86A223E8694100976F06 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A26C86A623E86B6100976F06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2B3879523E4607D00C83D37 /* pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pink.jpg; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				A2C9CC9123E321C000C7D2A1 /* Utilities.swift */,
 				A2B90E5423E443BA004B72EF /* Constants.swift */,
+				A25DFF0423E9B6CB0040C191 /* Protocols.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				A245F24323E2D81C0078DE00 /* ViewController.swift in Sources */,
 				A245F23F23E2D81C0078DE00 /* AppDelegate.swift in Sources */,
 				A2C9CC9223E321C000C7D2A1 /* Utilities.swift in Sources */,
+				A25DFF0523E9B6CB0040C191 /* Protocols.swift in Sources */,
 				A245F25323E2D8A50078DE00 /* SignUpViewController.swift in Sources */,
 				A26C86A323E8694100976F06 /* MenuViewController.swift in Sources */,
 				A245F25523E2D8B70078DE00 /* LoginViewController.swift in Sources */,
@@ -408,14 +412,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBX5CT9ZCS;
 				INFOPLIST_FILE = BeautyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sanja12.BeautyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -427,14 +432,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBX5CT9ZCS;
 				INFOPLIST_FILE = BeautyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sanja12.BeautyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

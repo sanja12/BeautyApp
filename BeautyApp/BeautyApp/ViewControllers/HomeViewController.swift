@@ -9,19 +9,28 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var delegate: HomeControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pink.jpg")!)
+        
+        configureNavigationBar()
+    }
+    
+    @objc func handleToggleMenu() {
+        delegate?.handleMenuToggle()
     }
     
     func configureNavigationBar() {
+        
         navigationController?.navigationBar.barTintColor = .systemPink
         navigationController?.navigationBar.barStyle = .black
         
-        navigationItem.title = "Menu"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .done, target: self, action: nil)
+        navigationItem.title = "Beauty Application"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action: nil)
     }
     
     /*

@@ -115,7 +115,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     func transitionToHome() {
         
-        let homeVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.containerViewController) as? ContainerViewController
+        let homeVC = ((storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.containerViewController))!) as! ContainerViewController
         
         view.window?.rootViewController = homeVC
         view.window?.makeKeyAndVisible()

@@ -10,24 +10,13 @@ import UIKit
 
 class ContainerViewController: UIViewController {
 
-    @IBOutlet var welcomeLbl: UIView!
+    var menuViewController: UIViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pink.jpg")!)
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: nil, action: nil)
-        
-        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
-        view.addSubview(navBar)
-
-        let navItem = UINavigationItem(title: "SomeTitle")
-        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: nil)
-        navItem.rightBarButtonItem = doneItem
-
-        navBar.setItems([navItem], animated: false)
-        
-//        configureHomeController()
+        configureHomeController()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,25 +26,38 @@ class ContainerViewController: UIViewController {
     func configureHomeController() {
         
         let homeCtrl = HomeViewController()
+        homeCtrl.delegate = self
         let controller = UINavigationController(rootViewController: homeCtrl)
         
         view.addSubview(controller.view)
-        addChild(controller)
-        controller.didMove(toParent: self)
+        addChildViewController(controller)
+        controller.didMove(toParentViewController: self)
     }
 
     func configureMenuController() {
         
+        if menuViewController == nil {
+            menuViewController = MenuViewController()
+            view.insertSubview(menuViewController.view, at: 0)
+            addChildViewController(menuViewController)
+            menuViewController.didMove(toParentViewController: self)
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func showMenuController(shouldExpand: Bool) {
+        
+        if shouldExpand {
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+            
+            }, completion: nil)
+        } else {
+            
+        }
     }
-    */
+}
 
+extension ContainerViewController: HomeControllerDelegate {
+    func handleMenuToggle() {
+        configureMenuController()
+    }
 }
