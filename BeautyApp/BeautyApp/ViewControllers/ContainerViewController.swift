@@ -11,6 +11,8 @@ import UIKit
 class ContainerViewController: UIViewController {
 
     var menuViewController: UIViewController!
+    var centerController: UIViewController!
+    var isExpanded = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +29,11 @@ class ContainerViewController: UIViewController {
         
         let homeCtrl = HomeViewController()
         homeCtrl.delegate = self
-        let controller = UINavigationController(rootViewController: homeCtrl)
+        centerController = UINavigationController(rootViewController: homeCtrl)
         
-        view.addSubview(controller.view)
-        addChildViewController(controller)
-        controller.didMove(toParentViewController: self)
+        view.addSubview(centerController.view)
+        addChildViewController(centerController)
+        centerController.didMove(toParentViewController: self)
     }
 
     func configureMenuController() {
@@ -48,16 +50,24 @@ class ContainerViewController: UIViewController {
         
         if shouldExpand {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
-            
+                self.centerController.view.frame.origin.x = self.centerController.view.frame.width - (self.centerController.view.frame.width / 2)
             }, completion: nil)
         } else {
-            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+                self.centerController.view.frame.origin.x = 0
+            }, completion: nil)
         }
     }
 }
 
 extension ContainerViewController: HomeControllerDelegate {
     func handleMenuToggle() {
-        configureMenuController()
+        
+        if !isExpanded {
+            configureMenuController()
+        }
+        
+        isExpanded = !isExpanded
+        showMenuController(shouldExpand: isExpanded)
     }
 }

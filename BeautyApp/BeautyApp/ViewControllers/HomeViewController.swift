@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         
         navigationItem.title = "Beauty Application"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action:#selector(handleToggleMenu))
     }
     
     /*
