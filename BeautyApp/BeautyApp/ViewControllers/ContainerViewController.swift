@@ -16,8 +16,7 @@ class ContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
+
         configureHomeController()
     }
     
@@ -50,7 +49,7 @@ class ContainerViewController: UIViewController {
         
         if shouldExpand {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
-                self.centerController.view.frame.origin.x = self.centerController.view.frame.width - (self.centerController.view.frame.width / 2)
+                self.centerController.view.frame.origin.x = self.centerController.view.frame.width - (self.centerController.view.frame.width / 4)
             }, completion: nil)
         } else {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {

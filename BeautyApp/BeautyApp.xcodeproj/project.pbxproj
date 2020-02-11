@@ -22,6 +22,9 @@
 		A26C86A723E86B6100976F06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C86A623E86B6100976F06 /* HomeViewController.swift */; };
 		A2B3879623E4607E00C83D37 /* pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B3879523E4607D00C83D37 /* pink.jpg */; };
 		A2B90E5523E443BA004B72EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B90E5423E443BA004B72EF /* Constants.swift */; };
+		A2C6854123F2C0EE00070405 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6854023F2C0EE00070405 /* MenuTableViewCell.swift */; };
+		A2C6854323F2D7AD00070405 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6854223F2D7AD00070405 /* MenuOptions.swift */; };
+		A2C6854523F2E42000070405 /* SubmenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */; };
 		A2C9CC9223E321C000C7D2A1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9CC9123E321C000C7D2A1 /* Utilities.swift */; };
 		DC6DC206BBB384630EF14DDB /* Pods_BeautyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6374865C0041D6112D38B0 /* Pods_BeautyApp.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		A26C86A623E86B6100976F06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2B3879523E4607D00C83D37 /* pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pink.jpg; sourceTree = "<group>"; };
 		A2B90E5423E443BA004B72EF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2C6854023F2C0EE00070405 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		A2C6854223F2D7AD00070405 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
+		A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmenuTableViewCell.swift; sourceTree = "<group>"; };
 		A2C9CC9123E321C000C7D2A1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,7 @@
 				A245F23E23E2D81C0078DE00 /* AppDelegate.swift */,
 				A245F24023E2D81C0078DE00 /* SceneDelegate.swift */,
 				A245F25823E30ED30078DE00 /* ViewControllers */,
+				A2C6853F23F2C07B00070405 /* Cells */,
 				A245F24423E2D81C0078DE00 /* Main.storyboard */,
 				A245F24723E2D8200078DE00 /* Assets.xcassets */,
 				A2B3879523E4607D00C83D37 /* pink.jpg */,
@@ -118,12 +125,22 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		A2C6853F23F2C07B00070405 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A2C6854023F2C0EE00070405 /* MenuTableViewCell.swift */,
+				A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A2C9CC9323E321DC00C7D2A1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				A2C9CC9123E321C000C7D2A1 /* Utilities.swift */,
 				A2B90E5423E443BA004B72EF /* Constants.swift */,
 				A25DFF0423E9B6CB0040C191 /* Protocols.swift */,
+				A2C6854223F2D7AD00070405 /* MenuOptions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -256,13 +273,16 @@
 			files = (
 				A245F24323E2D81C0078DE00 /* ViewController.swift in Sources */,
 				A245F23F23E2D81C0078DE00 /* AppDelegate.swift in Sources */,
+				A2C6854123F2C0EE00070405 /* MenuTableViewCell.swift in Sources */,
 				A2C9CC9223E321C000C7D2A1 /* Utilities.swift in Sources */,
 				A25DFF0523E9B6CB0040C191 /* Protocols.swift in Sources */,
 				A245F25323E2D8A50078DE00 /* SignUpViewController.swift in Sources */,
 				A26C86A323E8694100976F06 /* MenuViewController.swift in Sources */,
 				A245F25523E2D8B70078DE00 /* LoginViewController.swift in Sources */,
 				A26C86A723E86B6100976F06 /* HomeViewController.swift in Sources */,
+				A2C6854523F2E42000070405 /* SubmenuTableViewCell.swift in Sources */,
 				A245F24123E2D81C0078DE00 /* SceneDelegate.swift in Sources */,
+				A2C6854323F2D7AD00070405 /* MenuOptions.swift in Sources */,
 				A245F25723E30ED00078DE00 /* ContainerViewController.swift in Sources */,
 				A2B90E5523E443BA004B72EF /* Constants.swift in Sources */,
 			);
