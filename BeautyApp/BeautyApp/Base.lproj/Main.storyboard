@@ -244,36 +244,6 @@
             </objects>
             <point key="canvasLocation" x="3310" y="139"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zw0-ea-mWw">
-            <objects>
-                <viewController id="dve-z5-oTC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3YP-CW-yd6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="1rp-b6-BQ5"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WbP-XK-Ik0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4028" y="139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="g9t-td-NKw">
-            <objects>
-                <viewController id="Z5K-v9-aox" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ffj-cy-e4D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ys6-v3-GOe"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GkR-hN-SQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4754" y="139"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="u7P-d9-sxv">
             <objects>

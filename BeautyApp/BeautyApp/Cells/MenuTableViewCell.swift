@@ -18,7 +18,11 @@ class MenuTableViewCell: UITableViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.backgroundColor = .white
+        
+        let beautyImage = UIImage(named: "beauty1")
+        let tintedBeautyImage = beautyImage?.withRenderingMode(.alwaysTemplate)
+        iv.tintColor = .white
+        iv.image = tintedBeautyImage
         
         return iv
     }()
@@ -69,8 +73,8 @@ class MenuTableViewCell: UITableViewCell {
         arrowImageView.translatesAutoresizingMaskIntoConstraints = false
         arrowImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         arrowImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: self.frame.size.width - 45).isActive = true
-        arrowImageView.heightAnchor.constraint(equalToConstant: 22).isActive = true
-        arrowImageView.widthAnchor.constraint(equalToConstant: 22).isActive = true
+        arrowImageView.heightAnchor.constraint(equalToConstant: 12).isActive = true
+        arrowImageView.widthAnchor.constraint(equalToConstant: 12).isActive = true
         
         configureTableView()
     }
@@ -98,6 +102,9 @@ extension MenuTableViewCell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReuseIdentifier2", for: indexPath) as! SubmenuTableViewCell
+        
+        let submenuOptions = SubmenuOptions(rawValue: indexPath.row)
+        cell.descriptionLabel.text = submenuOptions?.description
         
         return cell
     }

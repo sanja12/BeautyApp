@@ -36,15 +36,34 @@ enum MenuOptions: Int, CustomStringConvertible {
         
         switch self {
             case .BeautySalons:
-                return UIImage(named: "") ?? UIImage()
+                return UIImage(named: "beauty2") ?? UIImage()
             case .Profile:
-                return UIImage(named: "") ?? UIImage()
+                return UIImage(named: "beauty2") ?? UIImage()
             case .Inbox:
-                return UIImage(named: "") ?? UIImage()
+                return UIImage(named: "beauty2") ?? UIImage()
             case .Notifications:
-                return UIImage(named: "") ?? UIImage()
+                return UIImage(named: "beauty2") ?? UIImage()
             case .Settings:
-                return UIImage(named: "") ?? UIImage()
+                return UIImage(named: "beauty2") ?? UIImage()
+        }
+    }
+}
+
+public enum SubmenuOptions: Int, CustomStringConvertible {
+
+    case Hair
+    case Nails
+    case MakeUp
+
+    public var description: String {
+        
+        switch self {
+            case .Hair:
+                return "Hair"
+            case .Nails:
+                return "Nails"
+            case .MakeUp:
+                return "Make Up"
         }
     }
 }

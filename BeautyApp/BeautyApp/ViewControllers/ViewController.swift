@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         guestUserBtn.tintColor = pinkColor
         guestUserBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         
+        titleLbl.textColor = pinkColor
     }
     
     @IBAction func guestUserTapped(_ sender: Any) {
