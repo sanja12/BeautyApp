@@ -18,11 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        let pinkColor = UIColor(red: 0.9686, green: 0.2902, blue: 0.4706, alpha: 1.0)
+        
         let navBar = UINavigationBar.appearance()
         navBar.setBackgroundImage(UIImage(), for: .default)
         navBar.shadowImage = UIImage()
         navBar.backgroundColor = .clear
         navBar.isTranslucent = true
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: pinkColor]
         
         return true
     }

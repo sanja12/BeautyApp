@@ -26,6 +26,7 @@
 		A2C6854323F2D7AD00070405 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6854223F2D7AD00070405 /* MenuOptions.swift */; };
 		A2C6854523F2E42000070405 /* SubmenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */; };
 		A2C9CC9223E321C000C7D2A1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9CC9123E321C000C7D2A1 /* Utilities.swift */; };
+		A2C9D65623F544F1009D5676 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9D65523F544F1009D5676 /* OptionsTableViewCell.swift */; };
 		DC6DC206BBB384630EF14DDB /* Pods_BeautyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6374865C0041D6112D38B0 /* Pods_BeautyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		A2C6854223F2D7AD00070405 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
 		A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmenuTableViewCell.swift; sourceTree = "<group>"; };
 		A2C9CC9123E321C000C7D2A1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A2C9D65523F544F1009D5676 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C6854023F2C0EE00070405 /* MenuTableViewCell.swift */,
+				A2C9D65523F544F1009D5676 /* OptionsTableViewCell.swift */,
 				A2C6854423F2E42000070405 /* SubmenuTableViewCell.swift */,
 			);
 			path = Cells;
@@ -276,6 +279,7 @@
 				A2C6854123F2C0EE00070405 /* MenuTableViewCell.swift in Sources */,
 				A2C9CC9223E321C000C7D2A1 /* Utilities.swift in Sources */,
 				A25DFF0523E9B6CB0040C191 /* Protocols.swift in Sources */,
+				A2C9D65623F544F1009D5676 /* OptionsTableViewCell.swift in Sources */,
 				A245F25323E2D8A50078DE00 /* SignUpViewController.swift in Sources */,
 				A26C86A323E8694100976F06 /* MenuViewController.swift in Sources */,
 				A245F25523E2D8B70078DE00 /* LoginViewController.swift in Sources */,
